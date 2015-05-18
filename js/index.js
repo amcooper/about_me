@@ -1,16 +1,26 @@
 $( document ).ready(function() {
-    $('a[href^="#"]').on('click', function(event) {
-        debugger;
-        var target = $(this.href);
-        console.log("target: " + target); //debug
-        console.log("target.length: " + target.length); //debug
-        debugger;
-        if ( target.length ) {
-            debugger;
-            event.preventDefault();
-            $('html, body').animate({
-                scrollTop: target.offset().top
-            }, 1000);
-        }
-    });
+    $('#scroll_contact').on('click', function(event) {
+        event.preventDefault();
+        console.log($('#contact').offset().top);
+        $('html, body').animate({
+            scrollTop: $('#contact').offset().top - 50
+        }, 1000);
+    });    
+
+    $('#scroll_projects').on('click', function(event) {
+        event.preventDefault();
+        console.log($('#projects').offset().top);
+        $('html, body').animate({
+            scrollTop: $('#projects').offset().top - 50
+        }, 1000);
+    });    
+
+    $('#scroll_about').on('click', function(event) {
+        event.preventDefault();
+        console.log($('#about').offset().top);
+        $('html, body').animate({
+            scrollTop: $('#about').offset().top - 50
+        }, 1000);
+    });    
+
 });

@@ -34,11 +34,11 @@ a:visited {
 	min-height: 400px;
 }
 
-.project_image {
-	margin: 0px auto;
+#projects_title {
+	text-align: center;
 }
 
-#projects_title {
+.project_caption {
 	text-align: center;
 }
 
@@ -47,6 +47,9 @@ a:visited {
 	color: white;
 	min-height: 400px;
 	padding: 40px;
-	list-style: none;
 	text-align: center;
+}
+
+#contact_list {
+	list-style: none;
 }
