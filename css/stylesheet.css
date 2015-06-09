@@ -117,7 +117,7 @@ a:visited {
 	min-height: 400px;
 }
 
-#projects_title {
+#projects_title, #contact_title {
 	text-align: center;
 	margin-bottom: 40px;
 }
@@ -143,6 +143,11 @@ a:visited {
 	text-align: center;
 }
 
-#contact_list {
-	list-style: none;
+#contact_text {
+	text-align: center;
+}
+
+#farewell {
+	font-family: 'Condiment', sans-serif;
+	font-size: 175%;
 }
