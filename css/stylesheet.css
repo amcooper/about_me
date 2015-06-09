@@ -107,8 +107,14 @@ a:visited {
 }
 
 #about_text_body {
+	margin-top: -20px;
 	padding: 0px 10px;
 	font-size: 120%;
+}
+
+.parallax-container {
+	height: 500px;
+	width: 100%;
 }
 
 #projects {
