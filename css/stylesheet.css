@@ -21,21 +21,98 @@ a:visited {
 	margin: -8px 16px 0px 0px;
 }
 
-#top-dummy {
+/*#top-dummy {
 	height: 50px;
+}*/
+
+.navbar-default {
+  background-color: #3333ff;
+  border-color: #000099;
+}
+.navbar-fixed-top {
+	background-color: #3333ff;
+}
+.navbar-default .navbar-brand {
+  color: #000066;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #000099;
+}
+.navbar-default .navbar-text {
+  color: #000066;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #000066;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #000099;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #000099;
+  background-color: #ccffff;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #000099;
+  background-color: #ccffff;
+}
+.navbar-default .navbar-toggle {
+  border-color: #000099;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #ccffff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ccffff;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #000066;
+}
+.navbar-default .navbar-link {
+  color: #000066;
+}
+.navbar-default .navbar-link:hover {
+  color: #000099;
 }
 
-nav {
-	background-color: #0000ff;
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #000066;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #000099;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #000099;
+    background-color: #ccffff;
+  }
 }
+
 #about {
-	padding-top: 50px;
+	padding-top: 100px;
 	background-color: #6666ff;
 	color: white;
 	min-height: 400px;
 }
 
+/*#about_text {
+	text-align: center;
+}*/
+
+#about_text_header {
+	font-family: 'Gravitas One', serif;
+	font-style: italic;
+	text-align: center;
+	font-size: 200%;
+}
+
+#about_text_body {
+	padding: 0px 10px;
+	font-size: 120%;
+}
+
 #projects {
+	padding-top: 50px;
 	background-color: #9999ff;
 	min-height: 400px;
 }
@@ -49,15 +126,20 @@ nav {
 	text-align: center;
 }
 
+.project_caption_header {
+	font-weight: bold;
+}
+
 .screenshot {
 	width: 160px;
+	margin-bottom: 20px;
 }
 
 #contact {
-	background-color: #ccccff;
+	background-color: #000099;
 	color: white;
 	min-height: 400px;
-	padding: 40px;
+	padding-top: 50px;
 	text-align: center;
 }
 

@@ -21,6 +21,11 @@ $( document ).ready(function() {
         $('html, body').animate({
             scrollTop: $('#about').offset().top - 50
         }, 1000);
-    });    
+    }); 
+
+    $(".nav a").on("click", function(){
+        $(".nav").find(".active").removeClass("active");
+        $(this).parent().addClass("active");
+    });   
 
 });
