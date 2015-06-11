@@ -11,10 +11,6 @@ a:visited {
 	color: white;
 }
 
-/*#main-content {
-	padding-top: 50px;
-}*/
-
 #profile {
 	display: inline;
 	height: 36px;
@@ -90,8 +86,9 @@ a:visited {
 
 #about {
 	padding-top: 100px;
-	background-color: #6666ff;
-	color: white;
+	background-color: white;
+	/*background-color: #6666ff;*/
+	color: #000099;
 	min-height: 400px;
 }
 
@@ -99,17 +96,25 @@ a:visited {
 	text-align: center;
 }*/
 
+#big_photo {
+	max-width: 250px;
+}
+
+#about_text {
+	padding-top: 100px;
+	padding-left: 40px;
+}
+
 #about_text_header {
-	font-family: 'Gravitas One', serif;
-	font-style: italic;
+	font-family: 'Condiment', serif;
+	/*font-style: italic;*/
 	text-align: center;
 	font-size: 200%;
 }
 
 #about_text_body {
-	margin-top: -20px;
 	padding: 0px 10px;
-	font-size: 120%;
+	font-size: 150%;
 }
 
 .parallax-container {
@@ -119,7 +124,8 @@ a:visited {
 
 #projects {
 	padding-top: 50px;
-	background-color: #9999ff;
+	background-color: white;
+	/*background-color: #9999ff;*/
 	min-height: 400px;
 }
 
@@ -142,18 +148,26 @@ a:visited {
 }
 
 #contact {
-	background-color: #000099;
-	color: white;
+	/*background-color: #000099;*/
+	background-color: white;
+	color: #000099;
 	min-height: 400px;
 	padding-top: 50px;
 	text-align: center;
 }
 
+#contact_title {
+	color: black;
+}
+
 #contact_text {
 	text-align: center;
+	color: black;
 }
 
 #farewell {
 	font-family: 'Condiment', sans-serif;
 	font-size: 175%;
+	color: #000099;
+	margin-top: 40px;
 }
