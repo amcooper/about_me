@@ -28,4 +28,11 @@ $( document ).ready(function() {
         $(this).parent().addClass("active");
     });   
 
+    $(".screenshot").on("mouseenter", function(){
+        $( this ).css({ "border-color": "rgb(0,200,255)", "border-color": "rgba(0,200,255,0.5)" });
+    })
+    .on("mouseleave", function() {
+        $( this ).css({ "border-color": "transparent" });
+    });
+
 });

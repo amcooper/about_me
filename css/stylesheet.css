@@ -1,6 +1,16 @@
 * {
 	font-family: 'Roboto', sans-serif;
+/*	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;*/
 }
+
+/*.box-sizing(@box-model) {
+  -webkit-box-sizing: @box-model; // Safari <= 5
+     -moz-box-sizing: @box-model; // Firefox <= 19
+          box-sizing: @box-model;
+}*/
+
 a:link {
 	text-decoration: none;
 	color: white;
@@ -145,6 +155,9 @@ a:visited {
 .screenshot {
 	width: 160px;
 	margin-bottom: 20px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent;
 }
 
 #contact {
@@ -170,4 +183,5 @@ a:visited {
 	font-size: 175%;
 	color: #000099;
 	margin-top: 40px;
+	margin-bottom: 360px;
 }
