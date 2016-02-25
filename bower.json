@@ -1,0 +1,19 @@
+{
+  "name": "about_me",
+  "homepage": "https://github.com/amcooper/about_me",
+  "authors": [
+    "Adam Cooper <amcooper@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
