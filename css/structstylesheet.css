@@ -27,6 +27,18 @@ a:visited {
   height: 650px;
 }
 
+#covertext {
+  margin: 200px auto 200px;
+}
+
+#adamcooper {
+  font-size: 2rem;
+}
+
+#developer {
+  font-size: 1.5rem;
+}
+
 #projects {}
 
 #p1 {
