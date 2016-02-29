@@ -1,5 +1,14 @@
 $( document ).ready(function() {
 
+    // Notice: loaded
+    console.log( 'index.js: loaded' );
+
+    // Trying out the click event on the new imagemap thingy
+    $( 'body' ).on( 'click', function( event ) {
+        $( '#coverimage' ).velocity({ height: "66%", width: "66%" }, [250,15]);
+        console.log( 'Clicked to shrink' );
+    });
+
     // These three animations scroll to the respective sections
     $('#scroll_contact').on('click', function(event) {
         event.preventDefault();
