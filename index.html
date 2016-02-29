@@ -22,95 +22,35 @@
     <link href="http://fonts.googleapis.com/css?family=Condiment&subset=latin" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Gravitas One&subset=latin" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="css/imagemap.css" type="text/css">
   </head>
   <body>
 
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#about"><img class="img-rounded" id="profile" src="images/profile_photo.jpg"><span>Adam Cooper</span></a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a id="scroll_about" href="#about">About <span class="sr-only">(current)</span></a></li>
-            <li><a id="scroll_projects" href="#projects">Projects</a></li>
-            <li><a id="scroll_contact" href="#contact">Contact</a></li>
-           </ul>
-        </div><!--/.nav-collapse -->
+    <div class="imageMap">
+      <img src="images/cover.png" alt="">
+      <div class="hotspots">
+        <div id="acd1">
+          <a class="p1"></a>
+          <b class="b1"></b>
+        </div>  
+
+        <div id="acd2">
+          <a class="p2"></a>
+          <b class="b2"></b>
+        </div>  
+
+        <div id="proj">
+          <a class="p3"></a>
+          <b class="b3"></b>
+        </div>  
+
+        <div id="cont">
+          <a class="p4"></a>
+          <b class="b4"></b>
+        </div>  
       </div>
-    </nav>
+    </div> 
 
-    <!-- About Me section -->
-    <div class="container-fluid" id="main-content">
-      <section>
-        <div id="top-dummy"></div>
-        <div id="about" class="row">
-          <div class="col-md-6 col-md-offset-3">
-            <img src="images/amc_ga_02_portrait.jpg" id="big_photo" alt="Adam Cooper on the air">
-            <p id="about_text">
-              <span id="about_text_header">Adam Cooper • Web Developer<br /></span><span id="about_text_body">Hi. I'm Adam. I develop beautiful and functional applications for the web. Take a look at some of my current projects (below) or drop me a line (also below).</span>
-            </p>
-          </div><!-- #col-md-6 -->
-        </div><!-- #about -->
-      </section>
-    </div>
-
-    <!-- First parallax image -->
-    <div class="parallax-container container-fluid" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="./images/cherry.JPG" data-natural-width="1400" data-natural-height="998" style="height: 276px;"></div>
-
-    <!-- Projects section -->
-    <div class="container-fluid">
-      <section>
-        <div id="projects" class="row">
-          <div class="row" id="projects_title">
-            <h3>Projects</h3>
-          </div>
-          <div class="row" id="project_links">
-            <div class="col-md-2 col-md-offset-1 col-xs-4 col-xs-offset-4">
-              <a href="http://theadamcooper.com:2002" target="_blank"><img src="images/speeches_cut.png" alt="Much Better Speeches" class="img-rounded screenshot center-block"></a>
-              <p class="project_caption"><span class="project_caption_header">Much Better Speeches</span><br><span class="project_caption_body">a blind word-substitution game</span></p>
-            </div>
-            <div class="col-md-2 col-md-offset-2 col-xs-4 col-xs-offset-4">
-                <a href="http://theadamcooper.com:2001" target="_blank"><img src="images/choperator_cut.png" alt="Choperator" class="img-rounded screenshot center-block"></a>
-                <p class="project_caption"><span class="project_caption_header">Choperator</span><br><span class="project_caption_body">a Websockets-based chat application</span></p>
-            </div>
-            <div class="col-md-2 col-md-offset-2 col-xs-4 col-xs-offset-4">
-              <a href="http://theadamcooper.com:2000/index.html" target="_blank"><img src="images/dinosaur_spaceship_cut.png" alt="Dinosaur Spaceship" class="img-rounded screenshot center-block"></a>
-              <p class="project_caption"><span class="project_caption_header">Dinosaur Spaceship</span><br><span class="project_caption_body">a library and e-reader</span></p>
-            </div>
-          </div>
-        </div><!-- #projects -->
-      </section>
-      </div>
-
-    <!-- Second parallax image -->
-    <div class="parallax-container container-fluid" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="./images/cherry.JPG" data-natural-width="1400" data-natural-height="998" style="height: 276px;"></div>
-
-    <!-- Contact section -->
-    <div class="container-fluid">
-      <section>
-        <div id="contact" class="row">
-          <div class="row" id="contact_title">
-            <h3>Contact Adam</h3>
-          </div>
-          <div class="row center-block">
-            <a href="https://github.com/amcooper" target="_blank"><img alt="GitHub" src="images/github-64-black.png"></a>
-            <a href="https://linkedin.com/in/adamcooperdev" target="_blank"><img alt="LinkedIn" src="images/linkedin-64-black.png"></a>
-            <a href="https://plus.google.com/103274961373196334773" target="_blank"><img alt="Google+" src="images/googleplus-64-black.png"></a>
-            <a href="mailto:amcooper+about_me@gmail.com" target="_blank"><img alt="Gmail" src="images/gmail-64-black.png"></a>          
-          </div>
-
-          <div class="row center-block"><p id="farewell">Drop me a line!</p></div>
-        </div><!-- #contact -->
-      </section>
-
-    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
