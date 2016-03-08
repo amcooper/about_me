@@ -1,5 +1,12 @@
 $( document ).ready(function() {
 
+    // smoothDivScroll section
+    $("#ticker").smoothDivScroll({
+        mousewheelScrolling: "allDirections",
+        manualContinuousScrolling: true,
+        autoScrollingMode: "onStart"
+    });
+    
     // These three animations scroll to the respective sections
     $('#scroll_contact').on('click', function(event) {
         event.preventDefault();
