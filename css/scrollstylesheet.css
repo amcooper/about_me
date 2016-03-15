@@ -1,5 +1,6 @@
 .container-fluid {
-  height: 1000px;
+  color: rgba(0,0,0,0.7);
+  /*height: 1000px;*/
   background-image: url(../images/paper01.jpg);
   /*background-image: url(../images/paper-4.jpg);*/
 }
@@ -14,6 +15,10 @@
   margin: 0 auto;
   text-align: center;
   font-size: 2em;
+}
+
+#ticker {
+  margin: 200px auto;
 }
 
 #ticker div.scrollableArea * {
@@ -34,5 +39,5 @@
 }
 
 .scrollableArea img {
-  height: 50px;
+  height: 100px;
 }
