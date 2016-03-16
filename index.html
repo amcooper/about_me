@@ -7,10 +7,11 @@
     <title>Adam Cooper | Web Developer</title>
 
     <!-- Bootstrap -->
-    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"> -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,7 +26,35 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-default navbar-fixed-top">
+    
+    <div class="container"> 
+<!--       <video autoplay loop muted style="height: 100%; width: auto;">
+        <source src="./images/shadowbox_long.m4v" type="video/m4v">
+      </video> -->
+      <video src="images/adam_website_background_long.mov" poster="images/adam_website_background_still.jpg" autoplay muted> <!-- Add "loop" in here in production. -->
+      </video>
+
+      <div id="titleText">
+        <div id="identification">
+          <p id="name">Adam Cooper</p>
+          <p id="dev">Developer</p>
+        </div>
+
+        <nav>
+          <ul id="links">
+            <li class="link" id="aboutLink">About</li>
+            <li class="link" id="projectsLink">Projects</li>
+            <li class="link" id="shotsLink">Shots</li>
+            <li class="link" id="jamsLink">Jams</li>
+            <li class="link" id="goodreadsLink">Good reads</li>
+            <li class="link" id="contactLink">Contact</li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+
+    <!-- <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -42,11 +71,11 @@
             <li><a id="scroll_projects" href="#projects">Projects</a></li>
             <li><a id="scroll_contact" href="#contact">Contact</a></li>
            </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
-    </nav>
+    </nav> -->
 
-    <!-- About Me section -->
+    <!-- About Me section 
     <div class="container-fluid" id="main-content">
       <section>
         <div id="top-dummy"></div>
@@ -56,16 +85,16 @@
             <p id="about_text">
               <span id="about_text_header">Adam Cooper • Web Developer<br /></span><span id="about_text_body">Hi. I'm Adam. I develop beautiful and functional applications for the web. Take a look at some of my current projects (below) or drop me a line (also below).</span>
             </p>
-          </div><!-- #col-md-6 -->
-        </div><!-- #about -->
+          </div>
+        </div>
       </section>
-    </div>
+    </div> -->
 
     <!-- First parallax image -->
-    <div class="parallax-container container-fluid" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="./images/cherry.JPG" data-natural-width="1400" data-natural-height="998" style="height: 276px;"></div>
+    <!-- <div class="parallax-container container-fluid" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="./images/cherry.JPG" data-natural-width="1400" data-natural-height="998" style="height: 276px;"></div> -->
 
     <!-- Projects section -->
-    <div class="container-fluid">
+    <!-- <div class="container-fluid">
       <section>
         <div id="projects" class="row">
           <div class="row" id="projects_title">
@@ -85,15 +114,15 @@
               <p class="project_caption"><span class="project_caption_header">Dinosaur Spaceship</span><br><span class="project_caption_body">a library and e-reader</span></p>
             </div>
           </div>
-        </div><!-- #projects -->
+        </div>
       </section>
-      </div>
+      </div> -->
 
     <!-- Second parallax image -->
-    <div class="parallax-container container-fluid" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="./images/cherry.JPG" data-natural-width="1400" data-natural-height="998" style="height: 276px;"></div>
+    <!-- <div class="parallax-container container-fluid" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="./images/cherry.JPG" data-natural-width="1400" data-natural-height="998" style="height: 276px;"></div> -->
 
     <!-- Contact section -->
-    <div class="container-fluid">
+    <!-- <div class="container-fluid">
       <section>
         <div id="contact" class="row">
           <div class="row" id="contact_title">
@@ -107,13 +136,17 @@
           </div>
 
           <div class="row center-block"><p id="farewell">Drop me a line!</p></div>
-        </div><!-- #contact -->
+        </div> 
       </section>
 
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    </div>-->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
     <script src="js/parallax.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> -->
+    <script src="bower_components/velocity/velocity.min.js"></script>
+    <script src="bower_components/velocity/velocity.ui.min.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>

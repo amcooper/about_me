@@ -1,9 +1,88 @@
+@font-face {
+  font-family: 'GT Walsheim Regular';
+  src: url('../fonts/GT-Walsheim-Pro-Trial-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'GT Walsheim Bold';
+  src: url('../fonts/GT-Walsheim-Pro-Trial-Bold.otf') format('opentype');
+}
+
+html {
+  font-size: 62.5%; /* The Snook Font Size */
+}
+
+.container {
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+video {
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+  width: 1400px;
+}
+
+#titleText {
+  position: absolute;
+  top: 300px;
+  padding-left: 40px;
+  /*color: navy;*/
+}
+
+
+#name {
+  font-family: 'GT Walsheim Bold', sans-serif;
+  font-size: 70px;
+  font-size: 7.0rem;
+  color: rgb(0,0,60);
+  color: rgba(0,0,60,0); /* alpha set to animate */
+}
+
+#dev {
+  font-family: 'GT Walsheim Bold', sans-serif;
+  font-size: 50px;
+  font-size: 5.0rem;
+  margin-top: -20px;
+  color: rgb(0,0,60);
+  color: rgba(0,0,60,0); /* alpha set to animate */
+}
+
+#links {
+  position: relative;
+  top: 100px; /* animate into view */
+  padding-left: 5px;
+  text-decoration: none;
+  font-family: 'GT Walsheim Bold', sans-serif;
+  display: none; /* animate into view */
+}
+
+.link {
+  list-style: none;
+  display: inline;
+  color: rgb(0,0,60);
+  color: rgba(0,0,60,0.7);
+  margin-right: 20px;
+}
+
+/*
+#aboutLink, #projectsLink, #shotsLink, #jamsLink, #goodreadsLink, #contactLink {
+  position: relative;
+  top: -1000px;
+  left: -1000px; /* animate into view *./
+}
+*/
+
+/* 
 * {
 	font-family: 'Roboto', sans-serif;
-/*	-webkit-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	box-sizing: border-box;*/
-}
+	box-sizing: border-box;
+} 
+*/
 
 /*.box-sizing(@box-model) {
   -webkit-box-sizing: @box-model; // Safari <= 5
