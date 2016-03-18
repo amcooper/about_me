@@ -1,5 +1,7 @@
 $( document ).ready(function() {
 
+    var linkTarget;
+
     $( "#name" ).velocity(
       { colorAlpha: 0.7 }, 
       { duration: 3000,
@@ -23,6 +25,27 @@ $( document ).ready(function() {
         } 
       }
     );
+
+    $( "#aboutLink" ).click( function() {
+      targetLink = "#about";
+    });
+
+    $( "#projectsLink" ).click( function() {
+      targetLink = "#projects";
+    });
+
+    $( "#contactLink" ).click( function() {
+      targetLink = "#contact";
+    });
+
+    $( "#links" ).click( function() {
+      $( "#titleText" ).velocity({ top: "40px" }, { duration: 1000 });
+      $( "#name" ).velocity({ fontSize: "30px", fontSize: "3.0rem" }, { duration: 1000 });
+      $( "#dev" ).velocity({ fontSize: "20px", fontSize: "2.0rem", marginTop: "-15px", height: "42px" }, { duration: 1000 });
+      $( "#links" ).velocity({ paddingLeft: "0px", marginTop: "-20px" }, { duration: 1000 });
+      $( ".link" ).css( "display", "block" );
+      $( targetLink ).css( "display", "block" );
+    });
 
     // var initialSequence = [
     //   { e: $( "#name" ), p: { colorAlpha: 0.7 }, o: { duration: 3000 } },
