@@ -22,6 +22,7 @@
     <link href="//fonts.googleapis.com/css?family=Roboto&subset=latin" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Condiment&subset=latin" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Gravitas One&subset=latin" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
   </head>
   <body>
@@ -43,9 +44,9 @@
           <ul id="links">
             <li class="link shimmy dormant" id="aboutLink">About</li>
             <li class="link shimmy dormant" id="projectsLink">Projects</li>
-            <li class="link bounce" id="shotsLink">Shots</li>
-            <li class="link bounce" id="jamsLink">Jams</li>
-            <li class="link bounce" id="goodreadsLink">Good reads</li>
+            <li class="link bounce" id="shotsLink">Shots <span class="glyphicon glyphicon-new-window"></span></li>
+            <li class="link bounce" id="jamsLink">Jams <span class="glyphicon glyphicon-new-window"></span></li>
+            <li class="link bounce" id="goodreadsLink">Good reads <span class="glyphicon glyphicon-new-window"></span></li>
             <li class="link shimmy dormant" id="contactLink">Contact</li>
           </ul>
         </nav>
@@ -53,7 +54,7 @@
 
       <section id="panels">
         <div id="about" class="hidden">
-          <p>ABOUT : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          <p class="generalText">ABOUT : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -62,16 +63,28 @@
         </div>
 
         <div id="projects" class="hidden">
-          <div>
-            <p>PROJECTS : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class="sectionTitle">PROJECTS</p>
+
+          <a href="http://theadamcooper.com:2002" target="_blank">
+          <div class="projectSummary">
+            <p class="subTitle">Much Better Speeches</p>
+            <p class="shortText">a blind word-substition game built with AngularJS</p>
           </div>
-          <div></div>
-          <div></div>
+          </a>
+
+          <a href="http://theadamcooper.com:2001" target="_blank">
+          <div class="projectSummary">
+            <p class="subTitle">Choperator</p>
+            <p class="shortText">a real-time chat application built with Node.js and WebSockets</p>
+          </div>
+          </a>
+
+          <a href="http://theadamcooper.com:2000" target="_blank">
+          <div class="projectSummary">
+            <p class="subTitle">Dinosaur Spaceship</p>
+            <p class="shortText">a library and e-reader built with Node.js</p>
+          </div>
+          </a>
         </div>
 
 <!--         <div id="shots"></div>
@@ -81,12 +94,14 @@
         <div id="goodreads"></div> -->
 
         <div id="contact" class="hidden">
-          <p>CONTACT : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class="sectionTitle">CONTACT</p>
+          <p class="contactText">Track me down on the Internets</p>
+          <div id="contactLinks">
+            <div class="trackLink" id="github"><a href="https://github.com/amcooper" target="_blank"><img src="images/github-64-black.png"></a></div>
+            <div class="trackLink" id="linkedin"><a href="https://linkedin.com/in/adamcooperdev" target="_blank"><img src="images/linkedin-64-black.png"></a></div>
+            <div class="trackLink" id="googleplus"><a href="https://plus.google.com/103274961373196334773" target="_blank"><img src="images/googleplus-64-black.png"></a></div>
+            <div class="trackLink" id="gmail"><a href="mailto:amcooper+theadamcooperdotcom@gmail.com" target="_blank"><img src="images/gmail-64-black.png"></a></div>
+          </div>
         </div>
       </section>
 

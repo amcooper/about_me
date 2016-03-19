@@ -38,22 +38,18 @@ $( document ).ready(function() {
     //   targetLink = "#contact";
     // });
 
-    $( "#links > li" ).click( function() {
-      if ($( this ).hasClass( "shimmy" )) {
-        $( "#titleText" ).velocity({ top: "40px" }, { duration: 1000 });
-        $( "#name" ).velocity({ fontSize: "30px", fontSize: "3.0rem" }, { duration: 1000 });
-        $( "#dev" ).velocity({ fontSize: "20px", fontSize: "2.0rem", marginTop: "-15px", height: "42px" }, { duration: 1000 });
-        $( "#links" ).velocity({ paddingLeft: "0px", marginTop: "-20px" }, { duration: 1000 });
-        $( ".link" ).css( "display", "block" );
-        $( "#panels > div").addClass( "hidden" );
-        console.log( "#" + $( this ).attr( "id" ));
-        $( "#" + ($( this ).attr( "id" )).slice(0,-4)).removeClass( "hidden" ); // <-- not quite right.
-      } else if ($( this ).hasClass( "bounce" )) {
-        console.log( "bounce" );
-      } else {
-        console.log( "other" );
-      }
-    });
+    $( ".shimmy" ).click( function() {
+      $( "#titleText" ).velocity({ top: "40px" }, { duration: 1000 });
+      $( "#name" ).velocity({ fontSize: "30px", fontSize: "3.0rem" }, { duration: 1000 });
+      $( "#dev" ).velocity({ fontSize: "20px", fontSize: "2.0rem", marginTop: "-15px", height: "42px" }, { duration: 1000 });
+      $( "#links" ).velocity({ paddingLeft: "0px", marginTop: "-20px" }, { duration: 1000 });
+      $( ".link" ).css( "display", "block" );
+      $( "#links > li" ).removeClass( "active" );
+      $( this ).removeClass( "dormant" ).addClass( "active" );
+      $( "#panels > div").addClass( "hidden" );
+      console.log( "#" + $( this ).attr( "id" )); // debuggin'
+      $( "#" + ($( this ).attr( "id" )).slice(0,-4)).removeClass( "hidden" ); // <-- quite right!
+     });
 
     // var initialSequence = [
     //   { e: $( "#name" ), p: { colorAlpha: 0.7 }, o: { duration: 3000 } },
