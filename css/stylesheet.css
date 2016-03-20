@@ -75,9 +75,11 @@ video {
 .active {
   /*border-bottom: 5px solid yellow;*/
   text-decoration: underline;
-  text-decoration-color: yellow;
+          text-decoration-color: yellow;
+     -moz-text-decoration-color: yellow;
   -webkit-text-decoration-color: yellow;
-  text-decoration-style: solid;
+          text-decoration-style: solid;
+     -moz-text-decoration-style: solid;
   -webkit-text-decoration-style: solid;
 }
 
