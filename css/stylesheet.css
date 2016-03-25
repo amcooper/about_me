@@ -1,11 +1,6 @@
 @font-face {
-  font-family: 'GT Walsheim Regular';
-  src: url('../fonts/GT-Walsheim-Pro-Trial-Regular.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'GT Walsheim Bold';
-  src: url('../fonts/GT-Walsheim-Pro-Trial-Bold.otf') format('opentype');
+  font-family: 'Neona';
+  src: url('../fonts/neona.ttf');
 }
 
 html {
@@ -13,9 +8,16 @@ html {
 }
 
 .container {
+  position: absolute;
+  z-index: 3;
   margin: 0;
   padding-left: 0;
   padding-right: 0;
+}
+
+#backdrop {
+  position: absolute;
+  z-index: 1;
 }
 
 video {
@@ -23,15 +25,54 @@ video {
   padding-left: 0;
   padding-right: 0;
   width: 1400px;
+  -webkit-filter: blur(15px);
+     -moz-filter: blur(15px);
+       -o-filter: blur(15px);
+      -ms-filter: blur(15px);
+          filter: blur(15px);
 }
 
-#titleText {
-  position: absolute;
-  top: 300px;
-  padding-left: 40px;
-  /*color: navy;*/
+.letter {
+  min-width: 95px;
 }
 
+.small {
+  font-size: 50%;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  /*display: table;*/
+}
+
+
+div {
+  /*display: table-cell;*/
+  text-align: center;
+  vertical-align: middle;
+}
+
+#topSpacer {
+  margin-bottom: 70px;
+}
+
+i {
+  min-width: 95px;
+  font: normal 120px/ 120px 'Neona', Helvetica, Arial;
+  color: #EEDDE0;
+  text-shadow: 0 0 18px #EC637B, 
+    0 0 6px rgba(230, 161, 173, 0.41), 
+    0 0 60px #E6A1AD, 
+    0 0 300px #F36780, 
+    3px 5.4px 3px rgba(0, 0, 0, 0.5);
+}
+
+i.off {
+  color: rgba(46, 46, 46, 0.61);
+  text-shadow: 4.2px 4.2px 3px rgba(0, 0, 0, 0.5);
+}
 
 #name {
   font-family: 'GT Walsheim Bold', sans-serif;

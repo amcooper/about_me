@@ -25,178 +25,40 @@
     <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
   </head>
+
   <body>
     
     <div class="container"> 
+      <div class="row">
+        <div id="topSpacer"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4"><span class="letter">A</span><span class="letter">D</span><span class="letter">A</span></div>
+      </div>
 
-      <!-- <video poster="images/thumbnails/adam_website_background_blur.webmsd.png" autoplay muted> <!-- Add "loop" in here in production. -->  -->
-      <video poster="images/thumbnails/adam_website_background_long.webmsd.png" autoplay muted>  <!-- Add "loop" in here in production. --> 
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4"><span class="letter">M</span><span class="letter">C</span><span class="letter">O</span></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4"><span class="letter">O</span><span class="letter">P</span><span class="letter">E</span></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4"><span class="letter">R</span><span class="letter">.</span><span class="letter small">j</span><span class="letter small">s</span></div>
+      </div>
+    </div>
+
+    <div id="backdrop">
+     <!-- <video poster="images/thumbnails/adam_website_background_blur.webmsd.png" autoplay muted> --> <!-- Add "loop" in here in production. -->  
+      <video poster="images/thumbnails/adam_website_background_long.webmsd.png" autoplay loop muted>  <!-- Add "loop" in here in production. --> 
         <source src="images/adam_website_background_long.webmsd.webm" type="video/webm">
         <source src="images/adam_website_background_long.mp4" type="video/mp4">
       </video>
-
-      <div id="titleText">
-        <div id="identification">
-          <p id="name">Adam Cooper</p>
-          <p id="dev">Developer</p>
-        </div>
-
-        <nav>
-          <ul id="links">
-            <li class="link shimmy dormant" id="aboutLink">About</li>
-            <li class="link shimmy dormant" id="projectsLink">Projects</li>
-            <li class="link bounce" id="shotsLink">Shots <span class="glyphicon glyphicon-new-window"></span></li>
-            <li class="link bounce" id="jamsLink">Jams <span class="glyphicon glyphicon-new-window"></span></li>
-            <li class="link bounce" id="goodreadsLink">Good reads <span class="glyphicon glyphicon-new-window"></span></li>
-            <li class="link shimmy dormant" id="contactLink">Contact</li>
-          </ul>
-        </nav>
-      </div>
-
-      <section id="panels">
-        <div id="about" class="hidden">
-          <p class="generalText">ABOUT : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-
-        <div id="projects" class="hidden">
-          <p class="sectionTitle">PROJECTS</p>
-
-          <a href="http://theadamcooper.com:2002" target="_blank">
-          <div class="projectSummary">
-            <p class="subTitle">Much Better Speeches</p>
-            <p class="shortText">a blind word-substition game built with AngularJS</p>
-          </div>
-          </a>
-
-          <a href="http://theadamcooper.com:2001" target="_blank">
-          <div class="projectSummary">
-            <p class="subTitle">Choperator</p>
-            <p class="shortText">a real-time chat application built with Node.js and WebSockets</p>
-          </div>
-          </a>
-
-          <a href="http://theadamcooper.com:2000" target="_blank">
-          <div class="projectSummary">
-            <p class="subTitle">Dinosaur Spaceship</p>
-            <p class="shortText">a library and e-reader built with Node.js</p>
-          </div>
-          </a>
-        </div>
-
-<!--         <div id="shots"></div>
-
-        <div id="jams"></div>
-
-        <div id="goodreads"></div> -->
-
-        <div id="contact" class="hidden">
-          <p class="sectionTitle">CONTACT</p>
-          <p class="contactText">Track me down on the Internets</p>
-          <div id="contactLinks">
-            <div class="trackLink" id="github"><a href="https://github.com/amcooper" target="_blank"><img src="images/github-64-black.png"></a></div>
-            <div class="trackLink" id="linkedin"><a href="https://linkedin.com/in/adamcooperdev" target="_blank"><img src="images/linkedin-64-black.png"></a></div>
-            <div class="trackLink" id="googleplus"><a href="https://plus.google.com/103274961373196334773" target="_blank"><img src="images/googleplus-64-black.png"></a></div>
-            <div class="trackLink" id="gmail"><a href="mailto:amcooper+theadamcooperdotcom@gmail.com" target="_blank"><img src="images/gmail-64-black.png"></a></div>
-          </div>
-        </div>
-      </section>
-
     </div>
 
-    <!-- <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#about"><img class="img-rounded" id="profile" src="images/profile_photo.jpg"><span>Adam Cooper</span></a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a id="scroll_about" href="#about">About <span class="sr-only">(current)</span></a></li>
-            <li><a id="scroll_projects" href="#projects">Projects</a></li>
-            <li><a id="scroll_contact" href="#contact">Contact</a></li>
-           </ul>
-        </div>
-      </div>
-    </nav> -->
 
-    <!-- About Me section 
-    <div class="container-fluid" id="main-content">
-      <section>
-        <div id="top-dummy"></div>
 
-        <div id="about" class="row">
-          <div class="col-md-6 col-md-offset-3">
-            <img src="images/amc_ga_02_portrait.jpg" id="big_photo" alt="Adam Cooper on the air">
-            <p id="about_text">
-              <span id="about_text_header">Adam Cooper • Web Developer<br /></span><span id="about_text_body">Hi. I'm Adam. I develop beautiful and functional applications for the web. Take a look at some of my current projects (below) or drop me a line (also below).</span>
-            </p>
-          </div>
-        </div>
-      </section>
-    </div> -->
-
-    <!-- First parallax image -->
-    <!-- <div class="parallax-container container-fluid" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="./images/cherry.JPG" data-natural-width="1400" data-natural-height="998" style="height: 276px;"></div>
-     -->
-
-    <!-- Projects section -->
-    <!-- <div class="container-fluid">
-      <section>
-        <div id="projects" class="row">
-          <div class="row" id="projects_title">
-            <h3>Projects</h3>
-          </div>
-          <div class="row" id="project_links">
-            <div class="col-md-2 col-md-offset-1 col-xs-4 col-xs-offset-4">
-              <a href="http://theadamcooper.com:2002" target="_blank"><img src="images/speeches_cut.png" alt="Much Better Speeches" class="img-rounded screenshot center-block"></a>
-              <p class="project_caption"><span class="project_caption_header">Much Better Speeches</span><br><span class="project_caption_body">a blind word-substitution game</span></p>
-            </div>
-            <div class="col-md-2 col-md-offset-2 col-xs-4 col-xs-offset-4">
-                <a href="http://theadamcooper.com:2001" target="_blank"><img src="images/choperator_cut.png" alt="Choperator" class="img-rounded screenshot center-block"></a>
-                <p class="project_caption"><span class="project_caption_header">Choperator</span><br><span class="project_caption_body">a Websockets-based chat application</span></p>
-            </div>
-            <div class="col-md-2 col-md-offset-2 col-xs-4 col-xs-offset-4">
-              <a href="http://theadamcooper.com:2000/index.html" target="_blank"><img src="images/dinosaur_spaceship_cut.png" alt="Dinosaur Spaceship" class="img-rounded screenshot center-block"></a>
-              <p class="project_caption"><span class="project_caption_header">Dinosaur Spaceship</span><br><span class="project_caption_body">a library and e-reader</span></p>
-            </div>
-          </div>
-        </div>
-      </section>
-      </div> -->
-
-    <!-- Second parallax image -->
-    <!-- <div class="parallax-container container-fluid" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="./images/cherry.JPG" data-natural-width="1400" data-natural-height="998" style="height: 276px;"></div>
-     -->
-
-    <!-- Contact section -->
-    <!-- <div class="container-fluid">
-      <section>
-        <div id="contact" class="row">
-          <div class="row" id="contact_title">
-            <h3>Contact Adam</h3>
-          </div>
-          <div class="row center-block">
-            <a href="https://github.com/amcooper" target="_blank"><img alt="GitHub" src="images/github-64-black.png"></a>
-            <a href="https://linkedin.com/in/adamcooperdev" target="_blank"><img alt="LinkedIn" src="images/linkedin-64-black.png"></a>
-            <a href="https://plus.google.com/103274961373196334773" target="_blank"><img alt="Google+" src="images/googleplus-64-black.png"></a>
-            <a href="mailto:amcooper+about_me@gmail.com" target="_blank"><img alt="Gmail" src="images/gmail-64-black.png"></a>          
-          </div>
-
-          <div class="row center-block"><p id="farewell">Drop me a line!</p></div>
-        </div> 
-      </section>
-
-    </div>-->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
     <script src="js/parallax.min.js"></script>
@@ -204,6 +66,7 @@
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> -->
     <script src="bower_components/velocity/velocity.min.js"></script>
     <script src="bower_components/velocity/velocity.ui.min.js"></script>
-    <script src="js/index.js"></script>
+    <!-- <script src="js/index.js"></script> -->
+    <script src="js/neon.js"></script>
   </body>
 </html>
