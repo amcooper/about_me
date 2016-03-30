@@ -94,6 +94,10 @@ div {
   text-shadow: 2.1px 2.1px 1.5px rgba(0, 0, 0, 0.5);
 }
 
+.nm > span {
+  display: none;
+}
+
 .ghost {
   font: normal 120px/ 120px 'Neona', Helvetica, Arial;
   color: rgba(238, 221, 224, 0);
