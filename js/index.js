@@ -2,9 +2,7 @@ $( document ).ready(function() {
 
   var extensionSeq = [];
 
-  $( '.nm > span' ).each( function( index,element ) {
-    console.log( index ); // debug
-    console.log( element ); // debug
+  $( '.ticker' ).each( function( index,element ) {
     extensionSeq.push({
       e: element,
       p: "fadeIn",
@@ -20,51 +18,63 @@ $( document ).ready(function() {
 
   extensionSeq[ extensionSeq.length - 1 ].o.complete = function() { parade(); };
 
-  // ---- DEBUGGING ------------------- //
-  console.log( "extensionSeq: " );
-  extensionSeq.forEach( function(el,i,a) {
-    for (var prop in el) {
-      if (el.hasOwnProperty( prop )) {
-        console.log( prop + " " + el[prop] );
-        console.log( el[prop].innerHTML || "--" );
-        console.log( typeof el[prop] );
-        if ( typeof el[prop] === "object" ) {
-          for (var subprop in el[prop]) {
-            if (el[prop].hasOwnProperty( subprop )) {
-              console.log( "subprop: " + subprop + " " + el[prop][subprop]);
-            }
-          }
-        };
-      }
-    }
-  });
-  // -----------------------------------//
-
-
   function parade() {
     $.Velocity.RunSequence( extensionSeq );
   };
 
   parade();
 
+  // $( '#aboutAdamLink' ).hover( function() {
+  //   $( '#lowercase' ).toggleClass( 'ahidden' );
+  //   $( '#aboutAdamHover' ).toggleClass( 'ahidden' );
+  // });
+
   $( '#aboutAdamLink' ).hover( function() {
-    $( '#lowercase' ).toggleClass( 'hidden' );
-    $( '#aboutAdamHover' ).toggleClass( 'hidden' );
+    console.log( 'aboutAdamLink : hover' );
+    $( '#lowercase' ).velocity( 'fadeOut' );
+    $( '#aboutAdamHover' ).velocity( 'fadeIn' );
   });
 
   $( '#aboutAdamHover' ).hover( function() {
-    $( '#lowercase' ).toggleClass( 'hidden' );
-    $( '#aboutAdamHover' ).toggleClass( 'hidden' );
+    $( '#lowercase' ).toggleClass( 'ahidden' );
+    $( '#aboutAdamHover' ).toggleClass( 'ahidden' );
   });  
 
   $( '#projectsLink' ).hover( function() {
-    $( '#lowercase' ).toggleClass( 'hidden' );
-    $( '#projectsHover' ).toggleClass( 'hidden' );
+    $( '#lowercase' ).toggleClass( 'ahidden' );
+    $( '#projectsHover' ).toggleClass( 'ahidden' );
   });
 
   $( '#projectsHover' ).hover( function() {
-    $( '#lowercase' ).toggleClass( 'hidden' );
-    $( '#projectsHover' ).toggleClass( 'hidden' );
+    $( '#lowercase' ).toggleClass( 'ahidden' );
+    $( '#projectsHover' ).toggleClass( 'ahidden' );
+  });
+
+  $( '#aboutAdamHover' ).click( function() {
+    $( '#lowercase' ).velocity( 'fadeOut', { duration: 1000 });
+    $( '#aboutAdamHover' ).velocity( 'fadeOut', { duration: 1000 });
+    $( '#aboutAdamPanel' ).velocity( 'fadeIn', { duration: 1000 });
+  });
+
+  $( '#projectsHover' ).click( function() {
+    $( '#lowercase' ).velocity( 'fadeOut', { duration: 1000 });
+    $( '#projectsHover' ).velocity( 'fadeOut', { duration: 1000 });
+    $( '#projectsPanel' ).velocity( 'fadeIn', { duration: 1000 });
+  });
+
+  $( '.navHome' ).click( function() {
+    $( '.panel' ).velocity( 'fadeOut', { duration: 1000 });
+    $( '#lowercase' ).velocity( 'fadeIn', { duration: 1000 });
+  });
+
+  $( '#navProjects' ).click( function() {
+    $( '#aboutAdamPanel' ).velocity( 'fadeOut', { duration: 1000 });
+    $( '#projectsPanel' ).velocity( 'fadeIn', { duration: 1000 });
+  });
+
+  $( '#navAbout' ).click( function() {
+    $( '.panel' ).velocity( 'fadeOut', { duration: 1000 });
+    $( '#aboutAdamPanel' ).velocity( 'fadeIn', { duration: 1000 });
   });
 
 });
