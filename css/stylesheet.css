@@ -153,6 +153,9 @@ div {
 
 nav > ul {
   list-style: none;
+  text-align: center;
+     -moz-padding-start: 0;
+  -webkit-padding-start: 0;
 }
 
 nav > ul > li {
@@ -172,7 +175,7 @@ nav a {
   left: 25%;
   z-index: 1;
   width: 50%;
-  margin-top: 50px;
+  margin-top: 20px;
   padding: 20px;
 }
 
@@ -183,17 +186,36 @@ nav a {
   left: 25%;
   z-index: 1;
   width: 50%;
-  margin-top: 50px;
+  margin-top: 20px;
   padding: 20px;
 }
 
 .longText {
-  font-family: 'Lato';
+  font-family: 'Roboto';
   font-weight: 900;
   font-size: 2rem;
   font-size: 20px;
+  text-align: justify;
 }
 
+#contact > ul {
+  list-style: none;
+  text-align: center;
+     -moz-padding-start: 0;
+  -webkit-padding-start: 0;
+}
+
+#contact > ul > li {
+  display: inline;
+}
+
+#contact li:last-child img {
+  margin-right: initial;
+}
+
+#contact img {
+  margin-right: 29%;
+}
 
 a:link {
 	text-decoration: none;
