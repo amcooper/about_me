@@ -30,25 +30,15 @@
     
     <div class="container"> 
       <div id="lowercase">
-        <p class="nt"><span class="hot hotAbout" id="aboutAdamLink">a</span>dam_</p>
-        <p class="nt">coo<span class="hot hotProjects" id="projectsLink">p</span>er</p>
-        <p class="nm"><span class="underline ahidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="ticker">.js</span><span class="ticker">.html</span><span class="ticker">.css</span><span class="ticker">.rb</span><span class="hot ticker">.jive</span></p>
-      </div>
-
-      <div id="aboutAdamHover" class="hot hotAbout">
-        <p class="nt"><a href="#/about">about_adam</a></p>
-      </div>
-
-      <div id="projectsHover" class="hot hotProjects">
-        <p class="ghost">a</p> <!-- Placeholder for the row -->
-        <p class="nt"><span class="ghost nt">coo</span><a href="#/projects">projects</a></p>
+        <p class="nt" id="lineOne"><span class="hot hotAbout" id="aboutAdamLink"><a href="#/about">a</a></span><span class="willHide">dam_</span></p>
+        <p class="nt" id="lineTwo"><span class="willHide">coo</span><span class="hot hotProjects" id="projectsLink"><a href="#/projects">p</a></span><span class="willHide">er</span></p>
+        <p class="nm willHide"><span class="underline ahidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="ticker">.js</span><span class="ticker">.html</span><span class="ticker">.css</span><span class="ticker">.rb</span><span class="hot ticker">.jive</span></p>
       </div>
 
       <div id="aboutAdamPanel" class="panel">
-        <!-- <p class="heading nm"><span class="current nm hot">about_adam</span><span class="anav">projects</span></p> -->
         <nav class="nm">
           <ul>
-            <li class="navHome"><a href="#/home"><span class="glyphicon glyphicon-home"></span></a></li>
+            <li class="navHome"><a href="#/home">home</a></li>
             <li>about_adam</li>
             <li class="hot" id="navProjects"><a href="#/projects">projects</a></li>
           </ul>
@@ -63,11 +53,10 @@
       </div>
 
       <div id="projectsPanel" class="panel">
-        <!-- <p class="heading nm"><span class="anav">about_adam</span><span class="current nm hot">projects</span></p> -->
         <nav class="nm">
           <ul>
-            <li class="navHome"><a href="#/home"><span class="glyphicon glyphicon-home"></span></a></li>
-            <li class="hot" id="navAbout"><a href="#/about_adam">about_adam</a></li>
+            <li class="navHome"><a href="#/home">home</a></li>
+            <li class="hot" id="navAbout"><a href="#/about">about_adam</a></li>
             <li>projects</li>
           </ul>
         </nav>

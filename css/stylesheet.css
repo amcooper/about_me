@@ -14,7 +14,6 @@ img {
 
 .container {
   position: relative;
-  z-index: 3;
   margin: 0;
   padding-left: 0;
   padding-right: 0;
@@ -22,13 +21,14 @@ img {
 
 #lowercase {
   position: absolute;
+  z-index: 3;
   margin-top: 120px;
   left: 33%;
 }
 
 #backdrop {
   position: absolute;
-  z-index: 1;
+  z-index: -1;
 }
 
 video {
@@ -128,7 +128,7 @@ div {
   position: absolute;
   margin-top: 120px;
   left: 33%;
-  z-index: 5;
+  /*z-index: 5;*/
 }
 
 #projectsHover {
@@ -136,7 +136,7 @@ div {
   position: absolute;
   margin-top: 120px;
   left: 33%;
-  z-index: 5;
+  /*z-index: 5;*/
 }
 
 .alwaysHidden {
@@ -170,6 +170,7 @@ nav a {
   background-color: rgba(204,204,204,0.0);
   position: absolute;
   left: 25%;
+  z-index: 1;
   width: 50%;
   margin-top: 50px;
   padding: 20px;
@@ -179,8 +180,10 @@ nav a {
   opacity: 0.0;  
   position: absolute;
   background-color: rgba(204,204,204,0.0);
+  left: 25%;
+  z-index: 1;
   width: 50%;
-  margin: 50px auto;
+  margin-top: 50px;
   padding: 20px;
 }
 
@@ -194,6 +197,7 @@ nav a {
 
 a:link {
 	text-decoration: none;
+  color: inherit;
   /*
   color: rgb(0,0,60);
 	color: rgba(0,0,60,1);
@@ -202,6 +206,7 @@ a:link {
 
 a:visited {
 	text-decoration: none;
+  color: inherit;
   /*
   color: rgb(0,0,0);
   color: rgba(0,0,0,1);
