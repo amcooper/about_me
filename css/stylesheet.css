@@ -7,12 +7,7 @@ html {
   font-size: 62.5%; /* The Snook Font Size */
 }
 
-img {
-  float: left;
-  margin: 10px;
-}
-
-.container {
+.container-fluid { /* This was .container */
   position: relative;
   margin: 0;
   padding-left: 0;
@@ -85,7 +80,7 @@ div {
 
 .nm {
   min-width: 95px;
-  margin-top: 50px;
+  /*margin-top: 50px;*/
   text-align: right;
   font: normal 60.0px/ 60.0px 'Neona', Helvetica, Arial;  
   color: #EEDDE0;
@@ -169,14 +164,16 @@ nav a {
 }
 
 #aboutAdamPanel {
-  opacity: 0.0;  
-  background-color: rgba(204,204,204,0.0);
+  opacity: 0.0;
+  background: url(../images/adam_background_3.jpg);  
+  /*background-color: rgba(204,204,204,0.0);*/
   position: absolute;
-  left: 25%;
+  left: 0%;
   z-index: 1;
-  width: 50%;
-  margin-top: 20px;
-  padding: 20px;
+  width: 100%;
+  margin-top: 0;
+  padding-right: 10px;
+  /*padding: 20px;*/
 }
 
 #projectsPanel {
@@ -190,12 +187,19 @@ nav a {
   padding: 20px;
 }
 
+#aboutAdamPanel img {
+  float: left;
+  margin-right: 10px;
+  /*margin: 10px;*/
+}
+
 .longText {
   font-family: 'Roboto';
-  font-weight: 900;
-  font-size: 2rem;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 4rem;
+  font-size: 40px;
   text-align: justify;
+  background-color: rgba(255,255,255,0.2);
 }
 
 #contact > ul {
@@ -214,7 +218,7 @@ nav a {
 }
 
 #contact img {
-  margin-right: 29%;
+  margin-right: 19%;
 }
 
 a:link {

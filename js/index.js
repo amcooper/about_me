@@ -58,6 +58,7 @@ $( document ).ready(function() {
 
   $( '#aboutAdamLink' ).click( function() {
     $( '#lowercase' ).css('z-index', '1').velocity('fadeOut', { duration: 1000 });
+    $( 'video' ).css( 'opacity', '0.0' );
     $( '#aboutAdamPanel' ).css('z-index', '3').velocity('fadeIn', { duration: 1000 });
   });
 
@@ -79,6 +80,7 @@ $( document ).ready(function() {
 
   $( '#navAbout' ).click( function() {
     $( '#projectsPanel' ).css('z-index', '1').velocity( 'fadeOut', { duration: 1000 });
+    $( 'video' ).css( 'opacity', '0.0' );
     $( '#aboutAdamPanel' ).css('z-index', '3').velocity( 'fadeIn', { duration: 1000 });
   });
 
