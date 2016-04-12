@@ -23,7 +23,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Robot+Mono:400,400italic,500,500italic|Roboto:400,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
   </head>
 
@@ -31,41 +31,25 @@
     
     <div class="container-fluid"> 
       <div id="lowercase">
-        <p class="nt" id="lineOne"><span class="hot hotAbout" id="aboutAdamLink"><a href="#/about">a</a></span><span class="willHide">dam_</span></p>
+        <p class="nt" id="lineOne"><span class="hot hotAbout" id="aboutLink"><a href="#/about">a</a></span><span class="willHide">dam_</span></p>
         <p class="nt" id="lineTwo"><span class="willHide">coo</span><span class="hot hotProjects" id="projectsLink"><a href="#/projects">p</a></span><span class="willHide">er</span></p>
         <p class="nm willHide"><span class="underline ahidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="ticker">.js</span><span class="ticker">.html</span><span class="ticker">.css</span><span class="ticker">.rb</span><span class="hot ticker">.jive</span></p>
       </div>
 
-      <div id="aboutAdamPanel" class="panel">
-        <img src="http://placecage.com/510/768">
-        <nav class="nm">
-          <ul>
-            <li class="hot navHome"><a href="#/home">home</a></li>
-            <li>about_adam</li>
-            <li class="hot" id="navProjects"><a href="#/projects">projects</a></li>
-          </ul>
-        </nav>
-        <p class="longText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat.</p>
-        <div id="contact">
-          <ul>
-            <li><a href="mailto:amcooper+website@gmail.com" target="_blank"><img src="images/gmail-64-black.png"></a></li>
-            <li><a href="https://github.com/amcooper" target="_blank"><img src="images/github-64-black.png"></a></li>
-            <li><a href="https://linkedin.com/in/adamcooperdev" target="_blank"><img src="images/linkedin-64-black.png"></a></li>
-          </ul>
+      <div id="photoPanel" class="triptych">
+        <img src="images/adam_bw_chair.jpg">
+      </div>
+
+      <div id="middlePanel" class="triptych">
+      </div>
+
+      <div id="bioPanel" class="triptych">
+        <div id="bioText">
+          <p class="longText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
       </div>
 
       <div id="projectsPanel" class="panel">
-        <nav class="nm">
-          <ul>
-            <li class="hot navHome"><a href="#/home">home</a></li>
-            <li class="hot" id="navAbout"><a href="#/about">about_adam</a></li>
-            <li>projects</li>
-          </ul>
-        </nav>
         <div class="projectSummary">
           <h3>Much Better Speeches</h3>
           <p class="longText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -82,6 +66,28 @@
         </div>
       </div>
     </div>
+
+    <nav id="floatingNav">
+      <div id="fNavTop">
+        <div id="fHomeLink" class="navLink">&bull;</div>
+        <div id="fAboutLink" class="navLink">&bull;</div>
+        <div id="fProjectsLink" class="navLink">&bull;</div>
+      </div>
+
+      <div id="fLateralLink" class="navLink">
+        <div id="fPhotoLink">&lt;</div>
+        <div id="fAboutSlash">/</div>
+        <div id="fBioLink">&gt;</div>
+      </div>
+
+      <div id="fContactLinks" class="navLink">
+        <ul>
+          <li><a href="mailto:amcooper+website@gmail.com" target="_blank" id="fGmailShow">&bull;</a></li>
+          <li><a href="https://github.com/amcooper" target="_blank" id="fGitHubShow">&bull;</a></li>
+          <li><a href="https://linkedin.com/in/adamcooperdev" target="_blank" id="fLinkedInShow">&bull;</a></li>
+        </ul>
+      </div>
+    </nav>
 
     <div id="backdrop">
       <video poster="images/thumbnails/adam_vintage_letters_clip.png" autoplay muted>  <!-- Add "loop" in here in production. --> 
