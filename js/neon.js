@@ -1,16 +1,16 @@
 $( document ).ready( function() {
 
   var $letters = $( '.hot' ),
-    flickers = [5, 7, 9, 11, 13, 15, 17],
+    flickers = [6, 8, 10, 12, 14, 16],
     $randomLetter,
-    flickerNumber,
-    counter;
+    flickerNumber, jFlickerNumber,
+    counter, jCounter;
 
   function randomFromInterval(from,to) {
-    return Math.floor(Math.random()*(to-from+1)+from);
+    return Math.floor(Math.random()*(to - from + 1) + from);
   }
 
-  function flicker() {    
+  function flicker( element, counter ) {    
     counter += 1;
     
     if (counter === flickerNumber) {
@@ -18,8 +18,8 @@ $( document ).ready( function() {
     }
 
     setTimeout(function () {
-      $randomLetter.toggleClass( 'off' );
-      flicker();
+      element.toggleClass( 'off' );
+      flicker( element, counter );
     }, 30);
   }
 
@@ -27,15 +27,27 @@ $( document ).ready( function() {
     var rand = randomFromInterval(500,3000);
 
     $randomLetter = $( '.hot' ).eq( randomFromInterval( 0, $letters.length - 1 ));
-    // console.log( "randomLetter " + randomLetter.html() );
     
     flickerNumber = flickers[ randomFromInterval(0, flickers.length - 1) ];
+    // console.log( 'randomLetter : ' + $randomLetter.children().eq(0).html() +'; flickerNumber : ' + flickerNumber );
 
     setTimeout(function() {
       counter = 0;
-      flicker();
+      flicker( $randomLetter, counter );
       loop();  
     }, rand);
   }());
 
+  (function jiveLoop() {
+    var jrand = randomFromInterval(500,3000);
+
+    jFlickerNumber = flickers[ randomFromInterval(0, flickers.length - 1) ];
+
+    setTimeout( function() {
+      jcounter = 0;
+      flicker( $( '.jive' ), jcounter );
+      jiveLoop();
+    }, jrand);
+  }());
+  
 });

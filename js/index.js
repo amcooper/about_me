@@ -75,15 +75,15 @@ $( document ).ready(function() {
 
   $( '#fHomeLink' ).hover(
     function() {
-      $( this ).html('<a href="#">home</a>');
+      $( this ).html('<a href="#" class="navText">home</a>');
     },
     function() {
-      $( this ).html('<a href="#">&bull;</a>');
+      $( this ).html('<a href="#" class="navBullet">&bull;</a>');
     }
   );
 
   $( '#fHomeLink' ).click( function() {
-    $( this ).html('<a href="#">&bull;</a>');
+    $( this ).html('<a href="#" class="navBullet">&bull;</a>');
     console.log('fAboutLink : clicked.'); // debug
     $( '#floatingNav' ).css('z-index', '1').velocity('fadeOut', { duration: 1000 });
     $( '.triptych' ).css('z-index', '1').velocity('fadeOut', { duration: 1000 });
@@ -95,36 +95,36 @@ $( document ).ready(function() {
 
   $( '#fAboutLink' ).hover(
     function() {
-      $( this ).html('<a href="#">about</a>');
+      $( this ).html('<a href="#" class="navText">about</a>');
     },
     function() {
-      $( this ).html('<a href="#">&bull;</a>');
+      $( this ).html('<a href="#" class="navBullet">&bull;</a>');
     }
   );
 
   $( '#fAboutLink' ).click( function() {
-    $( this ).html('<a href="#">&bull;</a>');
+    $( this ).html('<a href="#" class="navBullet">&bull;</a>');
     console.log('fAboutLink : clicked.'); // debug
     $( '#middlePanel' ).velocity('fadeIn', { duration: 1000 });
     $( '.container-fluid' ).velocity({left: '-1280px'}, { duration: 1000, easing: [250,50] });
     $( '#photoPanel,#bioPanel' ).velocity('fadeOut', { duration: 1000 });
     $( '#projectsPanel' ).css( 'z-index', '1').velocity('fadeOut', { duration: 1000 });
-    $( '#floatingNav' ).velocity({left: '500px'});
+    $( '#floatingNav' ).velocity({left: '500px'}).addClass( 'nn' ).removeClass( 'nnwhite' );
   });
 
   $( '#fProjectsLink' ).hover(
     function() {
-      $( this ).html('<a href="#">projects</a>');
+      $( this ).html('<a href="#" class="navText">projects</a>');
     },
     function() {
-      $( this ).html('<a href="#">&bull;</a>');
+      $( this ).html('<a href="#" class="navBullet">&bull;</a>');
     }
   );
 
   $( '#fProjectsLink' ).click( function() {
-    $( this ).html('<a href="#">&bull;</a>');
+    $( this ).html('<a href="#" class="navBullet">&bull;</a>');
     console.log( 'projects -> •');
-    $( '#floatingNav' ).velocity({ left: '1%' });
+    $( '#floatingNav' ).velocity({ left: '1%' }).addClass( 'nnwhite' ).removeClass( 'nn' );
     $( '.triptych' ).css('z-index', '1').velocity('fadeOut', { duration: 1000 });
     $( '.container-fluid' ).css({ 'width':'100%', 'left': '0' });
     $( '#projectsPanel' ).css('z-index', '3').velocity('fadeIn', { duration: 1000 });
@@ -132,12 +132,12 @@ $( document ).ready(function() {
 
   $( '#fLateralLink' ).hover(
     function() {
-      $( '#fPhotoLink' ).html('<a href="#">photo&nbsp;&lt;</a>');
-      $( '#fBioLink' ).html('<a href="#">&gt;&nbsp;bio</a>');
+      $( '#fPhotoLink' ).html('<a href="#"><span class="navText">photo&nbsp;</span><span class="navBullet">&lt;</span></a>');
+      $( '#fBioLink' ).html('<a href="#"><span class="navBullet">&gt;</span><span class="navText">&nbsp;bio</span></a>');
     },
     function() {
-      $( '#fPhotoLink' ).html('<a href="#">&lt;</a>');
-      $( '#fBioLink' ).html('<a href="#">&gt;</a>');
+      $( '#fPhotoLink' ).html('<a href="#" class="navBullet">&lt;</a>');
+      $( '#fBioLink' ).html('<a href="#" class="navBullet">&gt;</a>');
     }
   );
 
@@ -169,38 +169,38 @@ $( document ).ready(function() {
   );
 
   $( '#fPhotoLink' ).click( function() {
-    $( '#fPhotoLink' ).html('<a href="#">&lt;</a>');
-    $( '#fBioLink' ).html('<a href="#">&gt;</a>');
+    $( '#fPhotoLink' ).html('<a href="#" class="navBullet">&lt;</a>');
+    $( '#fBioLink' ).html('<a href="#" class="navBullet">&gt;</a>');
     console.log('fPhotoLink : clicked.'); // debug
     $( '#projectsPanel' ).css( 'z-index', '1').velocity('fadeOut', { duration: 1000 });
     $( '#photoPanel' ).velocity('fadeIn', { duration: 1000 });
     $( '.container-fluid' ).velocity({left: '0'}, { duration: 1000, easing: [250,50] });
     $( '#middlePanel,#bioPanel' ).velocity('fadeOut', { duration: 1000 });
-    $( '#floatingNav' ).velocity({left: '1%'});
+    $( '#floatingNav' ).velocity({left: '1%'}).addClass( 'nnwhite' ).removeClass( 'nn' );
     $( '.hoverShow' ).css( 'opacity', '0.0' );
   });
 
   $( '#fBioLink' ).click( function() {
-    $( '#fPhotoLink' ).html('<a href="#">&lt;</a>');
-    $( '#fBioLink' ).html('<a href="#">&gt;</a>');
+    $( '#fPhotoLink' ).html('<a href="#" class="navBullet">&lt;</a>');
+    $( '#fBioLink' ).html('<a href="#" class="navBullet">&gt;</a>');
     console.log('fBioLink : clicked.'); // debug
     $( '#projectsPanel' ).css( 'z-index', '1').velocity('fadeOut', { duration: 1000 });
     $( '#bioPanel' ).velocity('fadeIn', { duration: 1000 });
     $( '.container-fluid' ).velocity({left: '-2560px'}, { duration: 1000, easing: [250,50] });
     $( '#middlePanel,#photoPanel' ).velocity('fadeOut', { duration: 1000 });
-    $( '#floatingNav' ).velocity({left: '78%'});
+    $( '#floatingNav' ).velocity({left: '78%'}).addClass( 'nnwhite' ).removeClass( 'nn' );
     $( '.hoverShow' ).css( 'opacity', '0.0' );
   });
 
   $( '#fAboutSlash' ).click( function() {
-    $( '#fPhotoLink' ).html('<a href="#">&lt;</a>');
-    $( '#fBioLink' ).html('<a href="#">&gt;</a>');
+    $( '#fPhotoLink' ).html('<a href="#" class="navBullet">&lt;</a>');
+    $( '#fBioLink' ).html('<a href="#" class="navBullet">&gt;</a>');
     console.log('fAboutSlash : clicked.'); // debug
     $( '#projectsPanel' ).css( 'z-index', '1').velocity('fadeOut', { duration: 1000 });
     $( '#middlePanel' ).velocity('fadeIn', { duration: 1000 });
     $( '.container-fluid' ).velocity({left: '-1280px'}, { duration: 1000, easing: [250,50] });
     $( '#photoPanel,#bioPanel' ).velocity('fadeOut', { duration: 1000 });
-    $( '#floatingNav' ).velocity({left: '500px'});
+    $( '#floatingNav' ).velocity({left: '500px'}).addClass( 'nn' ).removeClass( 'nnwhite' );
   });
 
   $( '#projectsLink' ).click( function() {
@@ -209,6 +209,7 @@ $( document ).ready(function() {
     $( '#projectsPanel' ).css('z-index', '3').velocity('fadeIn', { duration: 1000 });
     $( '#floatingNav' )
       .css({'z-index': '5', right: 'auto', left: '1%' })
+      .addClass( 'nnwhite' ).removeClass( 'nn' )
       .velocity('fadeIn', { duration: 1000 });
   });
 
