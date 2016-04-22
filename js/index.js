@@ -93,24 +93,6 @@ $( document ).ready(function() {
     $( '#lowercase' ).css( 'z-index', '3' ).velocity('fadeIn', { duration: 1000 });
   });
 
-  $( '#fAboutLink' ).hover(
-    function() {
-      $( this ).html('<a href="#" class="navText">about</a>');
-    },
-    function() {
-      $( this ).html('<a href="#" class="navBullet">&bull;</a>');
-    }
-  );
-
-  $( '#fAboutLink' ).click( function() {
-    $( this ).html('<a href="#" class="navBullet">&bull;</a>');
-    console.log('fAboutLink : clicked.'); // debug
-    $( '#middlePanel' ).velocity('fadeIn', { duration: 1000 });
-    $( '.container-fluid' ).velocity({left: '-1280px'}, { duration: 1000, easing: [250,50] });
-    $( '#photoPanel,#bioPanel' ).velocity('fadeOut', { duration: 1000 });
-    $( '#projectsPanel' ).css( 'z-index', '1').velocity('fadeOut', { duration: 1000 });
-    $( '#floatingNav' ).velocity({left: '500px'}).addClass( 'nn' ).removeClass( 'nnwhite' );
-  });
 
   $( '#fProjectsLink' ).hover(
     function() {
@@ -189,6 +171,7 @@ $( document ).ready(function() {
     $( '.container-fluid' ).velocity({left: '-2560px'}, { duration: 1000, easing: [250,50] });
     $( '#middlePanel,#photoPanel' ).velocity('fadeOut', { duration: 1000 });
     $( '#floatingNav' ).velocity({left: '78%'}).addClass( 'nnwhite' ).removeClass( 'nn' );
+    // $( '#floatingNav' ).css( 'position', 'unset' ).css( 'left', 'unset' ).addClass( 'nnwhite' ).removeClass( 'nn' );
     $( '.hoverShow' ).css( 'opacity', '0.0' );
   });
 
