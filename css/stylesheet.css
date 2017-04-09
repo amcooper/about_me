@@ -280,7 +280,7 @@ nav a {
   opacity: 0.0;
   position: absolute;
   float: left;
-  top: 0px;
+  top: 0;
   left: 1280px;
   width: 1280px;
   height: 682px;
