@@ -198,6 +198,26 @@ nav a {
   margin-top: 60px;
 }
 
+/*Example HTML:
+
+<div class="visible">
+    <div class="hidden">Some text</div>
+</div>
+CSS:
+
+.hidden{
+    display: none;
+}
+.visible:hover .hidden{
+    display: block;
+}
+*/
+
+#homeHoverHide { display: block; }
+#homeHoverShow { display: none; }
+#fHomeLink:hover #homeHoverHide { display: none; }
+#fHomeLink:hover #homeHoverShow { display: block; }
+
 #fProjectsLink {
   margin-top: 40px;
 }
@@ -283,7 +303,7 @@ nav a {
   top: 0;
   left: 1280px;
   width: 1280px;
-  height: 682px;
+  height: 725px;
   z-index: 1;
 }
 
@@ -323,6 +343,11 @@ nav a {
   font-size: 3.5rem;
   font-size: 30px;
   margin: 10px auto;
+}
+
+.projectSummary h3 {
+  text-align: left;
+  letter-spacing: 2px;
 }
 
 .projectSummary {

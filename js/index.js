@@ -73,14 +73,14 @@ $( document ).ready(function() {
     ]);
   });
 
-  $( '#fHomeLink' ).hover(
-    function() {
-      $( this ).html('<a href="#" class="navText">home</a>');
-    },
-    function() {
-      $( this ).html('<a href="#" class="navBullet">&bull;</a>');
-    }
-  );
+  // $( '#fHomeLink' ).hover(
+  //   function() {
+  //     $( this ).html('<a href="#" class="navText">home</a>');
+  //   },
+  //   function() {
+  //     $( this ).html('<a href="#" class="navBullet">&bull;</a>');
+  //   }
+  // );
 
   $( '#fHomeLink' ).click( function() {
     $( this ).html('<a href="#" class="navBullet">&bull;</a>');
