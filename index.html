@@ -58,6 +58,10 @@
       <div id="projectsPanel" class="panel">
         <div id="projectsHeader" class="hot">projects</div>
         <div class="projectSummary">
+          <h3><a href="http://theadamcooper.com:2005" target="_blank">Wheels Within Wheels</a></h3>
+          <p class="longText">The (Ruby/Sinatra) CRUD app that makes (MEAN) CRUD apps. You may never need to make a CRUD app again.</p>
+        </div>
+        <div class="projectSummary">
           <h3><a href="http://theadamcooper.com:2002" target="_blank">Much Better Speeches</a></h3>
           <p class="longText">Fill in the blanks in history's greatest speeches and make them better. Much better. Built with JavaScript and AngularJS.</p>
         </div>
@@ -85,21 +89,44 @@
 
     <nav id="floatingNav" class="nn">
       <div id="fNavTop">
-        <div id="fHomeLink" class="navLink"><a href="#" class="navBullet">&bull;</a></div>
-        <div id="fProjectsLink" class="navLink"><a href="#" class="navBullet">&bull;</a></div>
+        <div id="fHomeLink" class="navLink">
+          <a href="#" class="navBullet" id="homeHoverHide">&bull;</a>
+          <a href="#" class="navText" id="homeHoverShow">home</a>
+        </div>
+        <div id="fProjectsLink" class="navLink">
+          <a href="#" class="navBullet" id="projectsHoverHide">&bull;</a>
+          <a href="#" class="navText" id="projectsHoverShow">projects</a>
+        </div>
       </div>
 
       <div id="fLateralLink" class="navLink">
-        <div id="fPhotoLink"><a href="#" class="navBullet">&lt;</a></div>
-        <div id="fAboutSlash"><a href="#" class="navBullet">/</a></div>
-        <div id="fBioLink"><a href="#" class="navBullet">&gt;</a></div>
+        <div id="fPhotoLink">
+          <a href="#" class="navBullet lateralHoverHide">&lt;</a>
+          <a href="#" class="lateralHoverShow"><span class="navText">photo&nbsp;</span><span class="navBullet">&lt;</span></a>
+        </div>
+        <div id="fAboutSlash">
+          <a href="#" class="navBullet">/</a>
+        </div>
+        <div id="fBioLink">
+          <a href="#" class="navBullet lateralHoverHide">&gt;</a>
+          <a href="#" class="lateralHoverShow"><span class="navBullet">&gt;</span><span class="navText">&nbsp;bio</span></a>
+        </div>
       </div>
 
       <div id="fContactLinks" class="navLink">
         <ul>
-          <li><a href="mailto:amcooper+website@gmail.com" title="Gmail" target="_blank" id="fGmailShow" class="navBullet">&bull;</a></li>
-          <li><a href="https://github.com/amcooper" title="GitHub" target="_blank" id="fGitHubShow" class="navBullet">&bull;</a></li>
-          <li><a href="https://linkedin.com/in/adamcooperdev" title="LinkedIn" target="_blank" id="fLinkedInShow" class="navBullet">&bull;</a></li>
+          <li id="fGmailLink">
+            <a href="mailto:amcooper+website@gmail.com" title="Gmail" target="_blank" id="gmailHoverHide" class="navBullet">&bull;</a>
+            <img src="images/gmail-64-color.png" id="gmailHoverShow" target="_blank">
+          </li>
+          <li id="fGithubLink">
+            <a href="https://github.com/amcooper" title="GitHub" target="_blank" id="githubHoverHide" class="navBullet">&bull;</a>
+            <img src="images/github-64-color.png" id="githubHoverShow" target="_blank">
+          </li>
+          <li id="fLinkedinLink">
+            <a href="https://linkedin.com/in/adamcooperdev" title="LinkedIn" target="_blank" id="linkedinHoverHide" class="navBullet">&bull;</a>
+            <img src="images/linkedin-64-color.png" id="linkedinHoverShow" target="_blank">
+          </li>
         </ul>
       </div>
     </nav>

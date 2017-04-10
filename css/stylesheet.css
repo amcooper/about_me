@@ -198,9 +198,19 @@ nav a {
   margin-top: 60px;
 }
 
+#homeHoverHide { display: block; }
+#homeHoverShow { display: none; }
+#fHomeLink:hover #homeHoverHide { display: none; }
+#fHomeLink:hover #homeHoverShow { display: block; }
+
 #fProjectsLink {
   margin-top: 40px;
 }
+
+#projectsHoverHide { display: block; }
+#projectsHoverShow { display: none; }
+#fProjectsLink:hover #projectsHoverHide { display: none; }
+#fProjectsLink:hover #projectsHoverShow { display: block; }
 
 #fLateralLink:before {
   clear: both;
@@ -210,6 +220,11 @@ nav a {
   margin-top: 40px;
   overflow: hidden;
 }
+
+.lateralHoverHide { display: block; }
+.lateralHoverShow { display: none; }
+#fLateralLink:hover .lateralHoverHide { display: none; }
+#fLateralLink:hover .lateralHoverShow { display: block; }
 
 #fLateralLink:after {
   clear: both;
@@ -259,6 +274,19 @@ nav a {
   margin-bottom: 10px;
 }
 
+#fContactLinks img {
+  margin: 0 auto;
+}
+
+#gmailHoverHide, #githubHoverHide, #linkedinHoverHide { display: block; }
+#gmailHoverShow, #githubHoverShow, #linkedinHoverShow  { display: none; }
+#fGmailLink:hover #gmailHoverHide { display: none; }
+#fGmailLink:hover #gmailHoverShow { display: block; }
+#fGithubLink:hover #githubHoverHide { display: none; }
+#fGithubLink:hover #githubHoverShow { display: block; }
+#fLinkedinLink:hover #linkedinHoverHide { display: none; }
+#fLinkedinLink:hover #linkedinHoverShow { display: block; }
+
 #photoPanel {
   opacity: 0.0;
   position: absolute;
@@ -283,7 +311,7 @@ nav a {
   top: 0;
   left: 1280px;
   width: 1280px;
-  height: 682px;
+  height: 725px;
   z-index: 1;
 }
 
@@ -323,6 +351,11 @@ nav a {
   font-size: 3.5rem;
   font-size: 30px;
   margin: 10px auto;
+}
+
+.projectSummary h3 {
+  text-align: left;
+  letter-spacing: 2px;
 }
 
 .projectSummary {

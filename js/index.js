@@ -73,15 +73,6 @@ $( document ).ready(function() {
     ]);
   });
 
-  $( '#fHomeLink' ).hover(
-    function() {
-      $( this ).html('<a href="#" class="navText">home</a>');
-    },
-    function() {
-      $( this ).html('<a href="#" class="navBullet">&bull;</a>');
-    }
-  );
-
   $( '#fHomeLink' ).click( function() {
     $( this ).html('<a href="#" class="navBullet">&bull;</a>');
     console.log('fAboutLink : clicked.'); // debug
@@ -94,14 +85,14 @@ $( document ).ready(function() {
   });
 
 
-  $( '#fProjectsLink' ).hover(
-    function() {
-      $( this ).html('<a href="#" class="navText">projects</a>');
-    },
-    function() {
-      $( this ).html('<a href="#" class="navBullet">&bull;</a>');
-    }
-  );
+  // $( '#fProjectsLink' ).hover(
+  //   function() {
+  //     $( this ).html('<a href="#" class="navText">projects</a>');
+  //   },
+  //   function() {
+  //     $( this ).html('<a href="#" class="navBullet">&bull;</a>');
+  //   }
+  // );
 
   $( '#fProjectsLink' ).click( function() {
     $( this ).html('<a href="#" class="navBullet">&bull;</a>');
@@ -112,43 +103,43 @@ $( document ).ready(function() {
     $( '#projectsPanel' ).css('z-index', '3').velocity('fadeIn', { duration: 1000 });
   });
 
-  $( '#fLateralLink' ).hover(
-    function() {
-      $( '#fPhotoLink' ).html('<a href="#"><span class="navText">photo&nbsp;</span><span class="navBullet">&lt;</span></a>');
-      $( '#fBioLink' ).html('<a href="#"><span class="navBullet">&gt;</span><span class="navText">&nbsp;bio</span></a>');
-    },
-    function() {
-      $( '#fPhotoLink' ).html('<a href="#" class="navBullet">&lt;</a>');
-      $( '#fBioLink' ).html('<a href="#" class="navBullet">&gt;</a>');
-    }
-  );
+  // $( '#fLateralLink' ).hover(
+  //   function() {
+  //     $( '#fPhotoLink' ).html('<a href="#"><span class="navText">photo&nbsp;</span><span class="navBullet">&lt;</span></a>');
+  //     $( '#fBioLink' ).html('<a href="#"><span class="navBullet">&gt;</span><span class="navText">&nbsp;bio</span></a>');
+  //   },
+  //   function() {
+  //     $( '#fPhotoLink' ).html('<a href="#" class="navBullet">&lt;</a>');
+  //     $( '#fBioLink' ).html('<a href="#" class="navBullet">&gt;</a>');
+  //   }
+  // );
 
-  $( '#fGmailShow' ).hover(
-    function() {
-      $( this ).html('<img src="images/gmail-64-color.png" target="_blank">');
-    },
-    function() {
-      $( this ).html('&bull;');
-    }
-  );
+  // $( '#fGmailShow' ).hover(
+  //   function() {
+  //     $( this ).html('<img src="images/gmail-64-color.png" target="_blank">');
+  //   },
+  //   function() {
+  //     $( this ).html('&bull;');
+  //   }
+  // );
 
-  $( '#fGitHubShow' ).hover(
-    function() {
-      $( this ).html('<img src="images/github-64-color.png" target="_blank">');
-    },
-    function() {
-      $( this ).html('&bull;');
-    }
-  );
+  // $( '#fGitHubShow' ).hover(
+  //   function() {
+  //     $( this ).html('<img src="images/github-64-color.png" target="_blank">');
+  //   },
+  //   function() {
+  //     $( this ).html('&bull;');
+  //   }
+  // );
 
-  $( '#fLinkedInShow' ).hover(
-    function() {
-      $( this ).html('<img src="images/linkedin-64-color.png" target="_blank">');
-    },
-    function() {
-      $( this ).html('&bull;');
-    }
-  );
+  // $( '#fLinkedInShow' ).hover(
+  //   function() {
+  //     $( this ).html('<img src="images/linkedin-64-color.png" target="_blank">');
+  //   },
+  //   function() {
+  //     $( this ).html('&bull;');
+  //   }
+  // );
 
   $( '#fPhotoLink' ).click( function() {
     $( '#fPhotoLink' ).html('<a href="#" class="navBullet">&lt;</a>');
