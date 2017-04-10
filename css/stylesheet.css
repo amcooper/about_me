@@ -466,6 +466,10 @@ a:visited {
     font: normal 40px/ 40px 'Neona', Helvetica, sans-serif;  
   }
 
+  #mprojectsLink {
+    z-index: 3;
+  }
+  
   video {
     opacity: 0.0;
   }
@@ -516,6 +520,10 @@ a:visited {
     font-size: 20px;
   }
 
+  #talk {
+    color: #edaab6;
+  }
+
   #projectsPanel {
     position: static;
     opacity: 1.0;
@@ -536,6 +544,10 @@ a:visited {
   #projectsHeader.off {
     color: rgba(46, 46, 46, 0.61);
     text-shadow: 1.05px 1.05px 0.75px rgba(0, 0, 0, 0.5);
+  }
+
+  .projectSummary h3 {
+    text-align: center;
   }
 
   .projectSummary .longText {
