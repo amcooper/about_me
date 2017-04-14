@@ -166,6 +166,21 @@ nav a {
   line-height: 30px;
 }
 
+/* -- Drop shadow from CSS-Tricks
+p { text-shadow: 1px 1px 1px #000, 3px 3px 5px blue; }
+
+-- Drop shadow for images from StackOverflow
+https://stackoverflow.com/questions/3186688/drop-shadow-for-png-image-in-css#12921987
+(there are other solutions among the answers)
+-o-box-shadow:      12px 12px 29px #555;
+-icab-box-shadow:   12px 12px 29px #555;
+-khtml-box-shadow:  12px 12px 29px #555;
+-moz-box-shadow:    12px 12px 29px #555;
+-webkit-box-shadow: 12px 12px 29px #555;
+box-shadow:         12px 12px 29px #555;
+
+*/
+
 .navText {
   font-size: 2rem;
   font-size: 20px;
