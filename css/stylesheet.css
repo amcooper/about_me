@@ -278,14 +278,28 @@ nav a {
   margin: 0 auto;
 }
 
-#gmailHoverHide, #githubHoverHide, #linkedinHoverHide { display: block; }
-#gmailHoverShow, #githubHoverShow, #linkedinHoverShow  { display: none; }
+#gmailHoverHide, 
+#githubHoverHide, 
+#linkedinHoverHide, 
+#wordpressHoverHide { 
+  display: block; 
+}
+
+#gmailHoverShow, 
+#githubHoverShow, 
+#linkedinHoverShow, 
+#wordpressHoverShow { 
+  display: none; 
+}
+
 #fGmailLink:hover #gmailHoverHide { display: none; }
 #fGmailLink:hover #gmailHoverShow { display: block; }
 #fGithubLink:hover #githubHoverHide { display: none; }
 #fGithubLink:hover #githubHoverShow { display: block; }
 #fLinkedinLink:hover #linkedinHoverHide { display: none; }
 #fLinkedinLink:hover #linkedinHoverShow { display: block; }
+#fWordpressLink:hover #wordpressHoverHide { display: none; }
+#fWordpressLink:hover #wordpressHoverShow { display: block; }
 
 #photoPanel {
   opacity: 0.0;
