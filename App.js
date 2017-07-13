@@ -1,35 +1,39 @@
-<!DOCTYPE html>
-<!--
-  
-  YES, THERE IS AN EASTER EGG
+import React, { Component } from 'react';
+import { render } from 'react-dom';
 
-  -->
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Adam Cooper | Web Developer</title>
+function Landing(props) {
+	return (
+		<div id="landing">
+	    <p className="nt" id="lineOne"><span className="hot hotAbout" id="aboutLink"><a href="#/about">a</a></span><span className="willHide">dam_</span></p>
+	    <p className="nt" id="lineTwo"><span className="willHide">coo</span><span className="hot hotProjects" id="projectsLink"><a href="#/projects">p</a></span><span className="willHide">er</span></p>
+	    <p className="nm willHide"><span className="underline ahidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span className="ticker">.js</span><span className="ticker">.html</span><span className="ticker">.css</span><span className="ticker">.rb</span><span className="ticker jive"><a href="jive.html" target="_blank">.jive</a></span></p>	
+    </div>	
+	);
+}
 
-    <!-- Bootstrap -->
-    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <!-- Optional theme -->
-    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+function Backdrop(props) {
+  return (
+    <div id="backdrop">
+      <video poster="images/thumbnails/adam_vintage_letters_clip.png" autoplay muted>
+        <source src="images/adam_vintage_letters_clip.webmsd.webm" type="video/webm" />
+        <source src="images/adam_vintage_letters_clip.mp4" type="video/mp4" />
+      </video>
+    </div>
+  )
+}
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Mono:400,400italic,500,500italic|Roboto:100,100italic,400,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="stylesheet.css" type="text/css">
-  </head>
+function App(props) {
+  return(
+    <div>
+    	<Landing />
+      <Backdrop />
+    </div>
+	);
+}
 
-  <body>
-    <div id="root"></div>    
-    <!--
+export default App;
+
+/*
     <div class="container-fluid"> 
       <div id="lowercase">
         <p class="nt" id="lineOne"><span class="hot hotAbout" id="aboutLink"><a href="#/about">a</a></span><span class="willHide">dam_</span></p>
@@ -144,13 +148,6 @@
         <source src="images/adam_vintage_letters_clip.mp4" type="video/mp4">
       </video>
     </div>
+
+    */
     -->
-    <script src="./bundle.js"></script>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="bower_components/velocity/velocity.min.js"></script>
-    <script src="bower_components/velocity/velocity.ui.min.js"></script>
-    <script src="js/index.js"></script>
-    <script src="js/neon.js"></script>
-  </body>
-</html>

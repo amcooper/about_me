@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Neona';
-  src: url('../fonts/neona.ttf');
+  src: url('./fonts/neona.ttf');
 }
 
 html {
