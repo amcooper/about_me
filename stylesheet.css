@@ -348,7 +348,7 @@ nav a {
 }
 
 #projectsPanel {
-  opacity: 0.0;
+  opacity: 0.4;
   position: absolute;
   left: 0;
   top: 0;
@@ -359,7 +359,7 @@ nav a {
 }
 
 #projectsHeader {
-  opacity: 0.0;
+  opacity: 0.4;
   font-family: 'Neona';
   color: #EEDDE0;
   font-size: 3.5rem;

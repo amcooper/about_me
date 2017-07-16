@@ -1,16 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 
-function Landing(props) {
-	return (
-		<div id="landing">
-	    <p className="nt" id="lineOne"><span className="hot hotAbout" id="aboutLink"><a href="#/about">a</a></span><span className="willHide">dam_</span></p>
-	    <p className="nt" id="lineTwo"><span className="willHide">coo</span><span className="hot hotProjects" id="projectsLink"><a href="#/projects">p</a></span><span className="willHide">er</span></p>
-	    <p className="nm willHide"><span className="underline ahidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span className="ticker">.js</span><span className="ticker">.html</span><span className="ticker">.css</span><span className="ticker">.rb</span><span className="ticker jive"><a href="jive.html" target="_blank">.jive</a></span></p>	
-    </div>	
-	);
-}
-
 function Backdrop(props) {
   return (
     <div id="backdrop">
@@ -22,13 +12,80 @@ function Backdrop(props) {
   )
 }
 
-function App(props) {
-  return(
+function Navbar(props) {
+  
+}
+
+function Home(props) {
+	return (
     <div>
-    	<Landing />
+  		<div id="landing">
+  	    <p className="nt" id="lineOne"><span className="hot hotAbout" id="aboutLink"><a href="#/about">a</a></span><span className="willHide">dam_</span></p>
+  	    <p className="nt" id="lineTwo"><span className="willHide">coo</span><span className="hot hotProjects" id="projectsLink" onClick={() => props.onClick("projects")}>p</span><span className="willHide">er</span></p>
+  	    <p className="nm willHide"><span className="underline ahidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span className="ticker">.js</span><span className="ticker">.html</span><span className="ticker">.css</span><span className="ticker">.rb</span><span className="ticker jive"><a href="jive.html" target="_blank">.jive</a></span></p>	
+      </div>
       <Backdrop />
     </div>
 	);
+};
+
+function Projects(props) {
+  return (
+    <div>
+      <div id="projectsPanel" className="panel">
+        <div id="projectsHeader" className="hot">projects</div>
+        <div className="projectSummary">
+          <h3><a href="http://theadamcooper.com:2005" target="_blank">Wheels Within Wheels</a></h3>
+          <p className="longText">The (Ruby/Sinatra) CRUD app that makes (MEAN) CRUD apps. You may never need to make a CRUD app again.</p>
+        </div>
+        <div className="projectSummary">
+          <h3><a href="http://theadamcooper.com:2002" target="_blank">Much Better Speeches</a></h3>
+          <p className="longText">Fill in the blanks in history's greatest speeches and make them better. Much better. Built with JavaScript and AngularJS.</p>
+        </div>
+        <div className="projectSummary">
+          <h3><a href="http://theadamcooper.com:2001" target="_blank">Choperator</a></h3>
+          <p className="longText">Real-time chat application. Built with JavaScript, WebSockets, and Node.js.</p>
+        </div>
+        <div className="projectSummary">
+          <h3><a href="http://theadamcooper.com:2000/index.html" target="_blank">Dinosaur Spaceship</a></h3>
+          <p className="longText">A library and e-reader. Built with JavaScript and Node.js.</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      home: true, 
+      about: false, 
+      projects: false
+    };
+  }
+
+  handleClick( panel ) {
+    let newState = {};
+    if ( panel === "projects") { 
+      newState = { home: false, about: false, projects: true };
+    } else if ( panel === "about" ) {
+      newState = { home: false, about: true, projects: false };
+    } else {
+      newState = { home: true, about: false, projects: false };
+    }
+    this.setState( newState );
+  }
+
+  render() {
+    return (
+      <div>
+      	<div>{ this.state.home && <Home onClick={(panel) => this.handleClick(panel)} /> }</div>
+        <div>{ this.state.about && <About onClick={(panel) => this.handleClick(panel)} /> }</div>
+        <div>{ this.state.projects && <Projects onClick={(panel) => this.handleClick(panel)} /> }</div>
+      </div>
+  	);
+  }
 }
 
 export default App;
@@ -150,4 +207,3 @@ export default App;
     </div>
 
     */
-    -->
