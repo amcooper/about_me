@@ -4,7 +4,7 @@ import { render } from 'react-dom';
 function Backdrop(props) {
   return (
     <div id="backdrop">
-      <video poster="images/thumbnails/adam_vintage_letters_clip.png" autoplay muted>
+      <video poster="images/thumbnails/adam_vintage_letters_clip.png" autoPlay muted>
         <source src="images/adam_vintage_letters_clip.webmsd.webm" type="video/webm" />
         <source src="images/adam_vintage_letters_clip.mp4" type="video/mp4" />
       </video>
@@ -27,6 +27,14 @@ function Home(props) {
       <Backdrop />
     </div>
 	);
+};
+
+function About(props) {
+  return (
+    <div id="bioText">
+      <p className="longText">A map is not just a map. It’s more of a conversation between the mapmaker and the map reader—and the landscape. As a student in Computer Sciences and Cartography at the University of Wisconsin, I started out exploring the intersection between maps and code. But after making maps in Scotland, writing a book, managing tech teams at companies with vastly different missions and vibes, editing a database of secret (but not entirely top secret) cutting edge drug trials, and nursing a linguistics habit on the side, I am now crafting maps out of code. I’m the developer. My users and students are the readers. The landscape is the web. Let’s <span id="talk">talk</span>.</p>
+    </div>
+  )
 };
 
 function Projects(props) {
@@ -67,6 +75,7 @@ class App extends Component {
 
   handleClick( panel ) {
     let newState = {};
+    alert(`Panel: ${panel}`);
     if ( panel === "projects") { 
       newState = { home: false, about: false, projects: true };
     } else if ( panel === "about" ) {
@@ -80,6 +89,11 @@ class App extends Component {
   render() {
     return (
       <div>
+        <nav style={{marginBottom: 20}}>
+          <button onClick={ () => !this.state.home && this.handleClick( "home" )} >Home</button>
+          <button onClick={ () => !this.state.about && this.handleClick( "about" )} >About</button>
+          <button onClick={ () => !this.state.projects && this.handleClick( "projects" )} >Projects</button>
+        </nav>
       	<div>{ this.state.home && <Home onClick={(panel) => this.handleClick(panel)} /> }</div>
         <div>{ this.state.about && <About onClick={(panel) => this.handleClick(panel)} /> }</div>
         <div>{ this.state.projects && <Projects onClick={(panel) => this.handleClick(panel)} /> }</div>

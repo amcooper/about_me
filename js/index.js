@@ -39,7 +39,7 @@ $( document ).ready(function() {
     });
   });
 
-  extensionSeq[ extensionSeq.length - 1 ].o.complete = function() { parade(); };
+  // extensionSeq[ extensionSeq.length - 1 ].o.complete = function() { parade(); };
 
   function parade() {
     $.Velocity.RunSequence( extensionSeq );
