@@ -163,6 +163,16 @@ $( document ).ready(function() {
 
   // } else {
 
+    $( '#aboutLink' ).click( function() {
+      // console.log('Clicking "a" scrolls to Bio panel.');
+      $( '#bioPanel' ).velocity("scroll", { duration: 1500, easing: "easeInOutSine" });
+    });
+
+    $( '#projectsLink' ).click( function() {
+      // console.log('Clicking "p" scrolls to Projects panel.');
+      $( '#projectsPanel' ).velocity("scroll", { duration: 1500, easing: "easeInOutSine" });
+    });
+
     $( '#maboutLink' ).click( function() {
       // console.log('Clicking "a" scrolls to Bio panel.');
       $( '#bioPanel' ).velocity("scroll", { duration: 1500, easing: "easeInOutSine" });

@@ -385,6 +385,16 @@ nav a {
   margin-bottom: 60px;
 }
 
+.projectGitHubLink {
+    margin-left: 10px;
+    position: relative;
+    top: -3px;
+}
+
+.projectGitHubLink img {
+  width: 36px;
+}
+
 #bioText {
   width: 600px;
   height: 600px;
