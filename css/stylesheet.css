@@ -339,7 +339,16 @@ nav a {
   width: 1280px;
   z-index: 1;
   margin-top: 0;
-  padding: 20px;
+  padding: 120px 20px 20px;
+}
+
+#bioHeader {
+  opacity: 0.0;
+  font-family: 'Neona';
+  color: #EEDDE0;
+  font-size: 3.5rem;
+  font-size: 30px;
+  margin: 10px auto;
 }
 
 #photoPanel img {
@@ -376,10 +385,20 @@ nav a {
   margin-bottom: 60px;
 }
 
+.projectGitHubLink {
+    margin-left: 10px;
+    position: relative;
+    top: -3px;
+}
+
+.projectGitHubLink img {
+  width: 36px;
+}
+
 #bioText {
   width: 600px;
   height: 600px;
-  margin: 80px auto;
+  margin: 10px auto 80px;
 }
 
 h3 {
@@ -450,7 +469,7 @@ a:visited {
   opacity: 0.0;
 }
 
-@media only screen and (max-device-width: 750px) {
+/*@media only screen and (max-device-width: 750px) {*/
 
   #lowercase {
     opacity: 0.0;
@@ -478,6 +497,10 @@ a:visited {
 
   .nm {
     font: normal 40px/ 40px 'Neona', Helvetica, sans-serif;  
+  }
+
+  .nm.willHide {
+    padding-right: 25%;
   }
 
   #mprojectsLink {
@@ -523,8 +546,24 @@ a:visited {
     width: 100%;
   }
 
+  #bioHeader {
+    opacity: 1.0;
+    font: normal 30.0px/ 30.0px 'Neona', Helvetica, sans-serif;
+    color: #EEDDE0;
+    text-shadow: 0 0 4.5px #EC637B, 
+      0 0 1.5px rgba(230, 161, 173, 0.41), 
+      0 0 15.0px #E6A1AD, 
+      0 0 75.0px #F36780, 
+      0.75px 1.35px 0.75px rgba(0, 0, 0, 0.5);  
+  }
+
+  #bioHeader.off {
+    color: rgba(46, 46, 46, 0.61);
+    text-shadow: 1.05px 1.05px 0.75px rgba(0, 0, 0, 0.5);
+  }
+
   #bioText {
-    width: 100%;
+    width: 80%;
     height: inherit;
   }
 
@@ -536,6 +575,7 @@ a:visited {
 
   #talk {
     color: #edaab6;
+    cursor: pointer;
   }
 
   #projectsPanel {
@@ -565,7 +605,8 @@ a:visited {
   }
 
   .projectSummary .longText {
-    padding: 10px 15%;
+    padding: 10px 25%;
+    text-align: center;
   }
 
   #contactsPanel {
@@ -613,4 +654,4 @@ a:visited {
     margin-right: 12%;
   }
 
-}
+/*}*/
