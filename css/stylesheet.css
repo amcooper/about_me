@@ -656,6 +656,7 @@ a:visited {
 
 /*}*/
 .container {
+  font-family: monospace;
   font-size: 1.6rem;
   text-align: left;
   padding: 10px 25% 0 25%;
@@ -663,10 +664,17 @@ a:visited {
 
 .intro {
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 .contact-list {
   list-style-type: none;
+  padding-left: 0;
+  text-decoration-line: underline;
+}
+
+.contact-list li {
+  margin-bottom: 5px;
 }
 
 .small-text {
