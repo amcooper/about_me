@@ -662,6 +662,10 @@ a:visited {
   padding: 10px 25% 0 25%;
 }
 
+.container a {
+  text-decoration-line: underline;
+}
+
 .intro {
   margin-bottom: 20px;
   text-align: justify;
@@ -670,7 +674,6 @@ a:visited {
 .contact-list {
   list-style-type: none;
   padding-left: 0;
-  text-decoration-line: underline;
 }
 
 .contact-list li {
