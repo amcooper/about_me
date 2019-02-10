@@ -655,3 +655,32 @@ a:visited {
   }
 
 /*}*/
+.container {
+  font-family: monospace;
+  font-size: 1.6rem;
+  text-align: left;
+  padding: 10px 25% 0 25%;
+}
+
+.container a {
+  text-decoration-line: underline;
+}
+
+.intro {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.contact-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.contact-list li {
+  margin-bottom: 5px;
+}
+
+.small-text {
+  font-size: 1.2rem;
+}
+
